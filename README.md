@@ -18,10 +18,9 @@
 
 
 
-- [1.1 First Rule of Flexbox](#1.1 First Rule of Flexbox)
+- [1.1 First Rule of Flexbox](#1.1-First-Rule-of-Flexbox)
 
-- [1.2 Main Axis and Cross Axis](#1.2 Main Axis and Cross Axis)
-
+- [1.2 Main Axis and Cross Axis](#1.2-Main-Axis-and-Cross-Axis)
 
 
 
@@ -63,7 +62,7 @@
 
 
 
-## #1.1 First Rule of Flexbox
+## 1.1 First Rule of Flexbox
 
 - box를 정렬시킬 때 부모의 값이 (parent) 자식의 값(children)을 정렬시킬 수 있음
 
@@ -74,7 +73,7 @@
 
 
 
-## #1.2 Main Axis and Cross Axis
+## 1.2 Main Axis and Cross Axis
 
 - flexbox css 두 종류가 있음
 
