@@ -18,9 +18,9 @@
 
 
 
-- [1.1 First Rule of Flexbox](#1.1-First-Rule-of-Flexbox)
+- [1.1 First Rule of Flexbox](#11-First-Rule-of-Flexbox)
 
-- [1.2 Main Axis and Cross Axis](#1.2-Main-Axis-and-Cross-Axis)
+- [1.2 Main Axis and Cross Axis](#12-Main-Axis-and-Cross-Axis)
 
 
 
