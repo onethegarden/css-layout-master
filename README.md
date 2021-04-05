@@ -19,8 +19,8 @@
 
 
 - [1.1 First Rule of Flexbox](#11-First-Rule-of-Flexbox)
-
 - [1.2 Main Axis and Cross Axis](#12-Main-Axis-and-Cross-Axis)
+- [1.3 Column and Row](13-Column-and-Row)
 
 
 
@@ -68,8 +68,7 @@
 
 
 
-
-<br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 
 
@@ -81,10 +80,7 @@
 
   2. column (Cross Axis) : 열, 세로
 
-
 <br/><br/><br/>
-
-
 
 - **justify-content** : <u>가로로</u> children 을 정렬함
   - center : 가운데 정렬
@@ -93,12 +89,7 @@
   
   - space-around : box사이에 공간이 일정하게 생김
 
-
-
-
 <br/><br/><br/>
-
-
 
 - **align-item** : <u>세로로</u> children들을 정렬함( 단, wrapper 에 대한 정렬임)
   - center : 가운데 정렬
@@ -107,9 +98,12 @@
   
   - flex-start : 처음에 맞춤
 
+<br/><br/><br/><br/><br/>
 
+## 1.3 Column and Row
 
+- ```flex-direction : column``` 일 때 main axis와 cross axis는 **반대!!**
+- main axis = column
+- cross axis = row
 
-
-
-
+- 그러므로 ```justify-content```는 **main axis**(세로) 이고, ```align-items```는 **cross axis**(가로) 이다.
