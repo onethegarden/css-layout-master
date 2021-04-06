@@ -20,11 +20,11 @@
 
 - [1.1 First Rule of Flexbox](#11-First-Rule-of-Flexbox)
 - [1.2 Main Axis and Cross Axis](#12-Main-Axis-and-Cross-Axis)
-- [1.3 Column and Row](13-Column-and-Row)
-- [1.4 align-self and order](14-align-self-and-order)
-- [1.5 wrap, nowrap, reverse, align-content](15-wrap,-nowrap,-reverse,-align-content)
+- [1.3 Column and Row](#13-Column-and-Row)
+- [1.4 align-self and order](#14-align-self-and-order)
+- [1.5 wrap, nowrap, reverse, align-content](#15-wrap-nowrap-reverse-align-content)
 
-
+- [1.6 flex-grow, flex-shrink](#16-flex-grow-flex-shrink)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -157,3 +157,20 @@
 - flex-direction: row-reverse : 오른쪽에서부터 1이 시작
 - flex-direction: column-reverse : 오른쪽에서부터 1이 시작 (세로로)
 - flex-wrap: wrap-reverse
+
+<br/><br/><br/><br/><br/>
+
+## 1.6 flex-grow, flex-shrink
+
+- flex로 나열된 block들의 특정 child를 줄이거나(shrink) 늘려줌(grow)
+
+#### flex-shrink
+
+- 기본 값 : 1
+- ```flex-shrink: 2;``` 이렇게 설정하면 화면을 줄였을 때, 2배로 줄어들음
+
+### flex-grow
+
+- 기본 값 : 0
+- ```flex-grow: 1;``` : 빈 공간을 없애고 남은 공간을 가져감 
+
