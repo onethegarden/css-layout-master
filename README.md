@@ -22,6 +22,7 @@
 - [1.2 Main Axis and Cross Axis](#12-Main-Axis-and-Cross-Axis)
 - [1.3 Column and Row](13-Column-and-Row)
 - [1.4 align-self and order](14-align-self-and-order)
+- [1.5 wrap, nowrap, reverse, align-content](15-wrap,-nowrap,-reverse,-align-content)
 
 
 
@@ -139,3 +140,20 @@
 - default 는 0이고 숫자가 작은순서대로 정렬됨.
 
   ex) order:1 로 주면 기본값이 0인 애들보다 뒤에 위치하게 됨.
+
+<br/><br/><br/><br/><br/>
+
+## 1.5 wrap, nowrap, reverse, align-content
+
+- father과 child 모두 flex로 해주면 width값을 설정해줬더라도 한 줄로 됨
+
+#### flex-wrap
+
+- flex-wrap: wrap : child의 width 유지
+- flex-wrap: nowrap : child를 모두 한줄로, default 값
+
+#### reverse
+
+- flex-direction: row-reverse : 오른쪽에서부터 1이 시작
+- flex-direction: column-reverse : 오른쪽에서부터 1이 시작 (세로로)
+- flex-wrap: wrap-reverse
