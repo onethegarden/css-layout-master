@@ -23,8 +23,8 @@
 - [1.3 Column and Row](#13-Column-and-Row)
 - [1.4 align-self and order](#14-align-self-and-order)
 - [1.5 wrap, nowrap, reverse, align-content](#15-wrap-nowrap-reverse-align-content)
-
 - [1.6 flex-grow, flex-shrink](#16-flex-grow-flex-shrink)
+- [1.7 flex-basis](#17-flex-basis)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -174,3 +174,9 @@
 - 기본 값 : 0
 - ```flex-grow: 1;``` : 빈 공간을 없애고 남은 공간을 가져감 
 
+<br/><br/><br/><br/><br/>
+
+## 1.7 flex-basis
+
+- flex-basis : initial size로 flex-grow를 설정하면 flex-basis가 무너진다.
+- width로 대체될 수 있음, 잘 쓰이지는 않음
