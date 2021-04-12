@@ -31,6 +31,7 @@
 - [2.2 CSS Grid Basic Concepts](#22-css-grid-basic-concepts)
 - [2.3 Grid Template Areas](#23-Grid-Template-Areas)
 - [2.4 Rows and Columns](24-Rows-and-Columns)
+- [2.5 Shortcuts](#25-Shortcuts)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -235,3 +236,10 @@
 
   -> row는 2칸 차지
 
+<br/><br/><br/><br/><br/>
+
+## 2.5 Shortcuts
+
+- grid-column:1/4; 3칸
+- grid-column:span 4; 4칸
+-  grid-column: 2/span 2; 2번째부터 2칸
