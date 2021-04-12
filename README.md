@@ -26,6 +26,11 @@
 - [1.6 flex-grow, flex-shrink](#16-flex-grow-flex-shrink)
 - [1.7 flex-basis](#17-flex-basis)
 
+
+
+- [2.2 CSS Grid Basic Concepts](#22-css-grid-basic-concepts)
+- [2.3 Grid Template Areas](#23-Grid-Template-Areas)
+
 <br/><br/><br/>
 <br/><br/><br/>
 <br/><br/><br/>
@@ -180,3 +185,35 @@
 
 - flex-basis : initial size로 flex-grow를 설정하면 flex-basis가 무너진다.
 - width로 대체될 수 있음, 잘 쓰이지는 않음
+
+<br/><br/><br/><br/><br/>
+
+## 2.2 CSS Grid Basic Concepts
+
+- grid의 디자인은 parent요소에서 함 ```display : grid``` 로 적용
+- ```grid-template-columns :  250px 250px 250px;```  -> 250px짜리 그리드가 세개 생김
+- ```grid-template-rows: 100px 50px 300px;``` -> 지정한 픽셀의 로우가 세개 생김
+- ```column-gap: 10px;``` column 사이의 gap
+- ```row-gap: 10px;``` row 사이의 gap
+
+<br/><br/><br/><br/><br/>
+
+## 2.3 Grid Template Areas
+
+- ```grid-template-rows: 100px repeat(2, 200px) 100px;``` : repeat(반복할 개수, px)
+
+- ```
+   grid-template-areas:
+    "header header header header"
+    "content content . nav"
+    "content content . nav"
+    "footer footer footer footer"
+    
+  .header{
+    background-color: #2ecc71;
+    grid-area: header;
+  }
+  
+  ```
+
+  변수처럼 사용할 수 있음
