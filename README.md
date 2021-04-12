@@ -30,6 +30,7 @@
 
 - [2.2 CSS Grid Basic Concepts](#22-css-grid-basic-concepts)
 - [2.3 Grid Template Areas](#23-Grid-Template-Areas)
+- [2.4 Rows and Columns](24-Rows-and-Columns)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -216,4 +217,21 @@
   
   ```
 
-  변수처럼 사용할 수 있음
+  변수처럼 만들어 템플릿으로 사용할 수 있음
+
+<br/><br/><br/><br/><br/>
+
+## 2.4 Rows and Columns
+
+-  grid-column-start: 1; 시작 
+
+- grid-column-end:4; 끝(n-1로 생각하면 쉬움) 
+
+  -> column은 3칸 차지
+
+- grid-row-start:2;
+
+- grid-row-end:4;
+
+  -> row는 2칸 차지
+
