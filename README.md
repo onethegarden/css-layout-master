@@ -33,6 +33,7 @@
 - [2.4 Rows and Columns](24-Rows-and-Columns)
 - [2.5 Shortcuts](#25-Shortcuts)
 - [2.6 Line Naming](26-Line-Naming)
+- [2.7 Grid Template](27-Grid-Template)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -263,4 +264,30 @@
   }
   ```
 
+
+<br/><br/><br/><br/><br/>
+
+## 2.7 Grid Template
+
+- 부모요소
+
+  ```css
+   grid-template:
+      [header-start] "header header header header" 1fr [header-end]
+      [content-start] "content content content nav" 3fr [content-end]
+      [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr;
+  ```
+
+- 자식요소
+
+  ```css
+  .header {
+    background-color: #2ecc71;
+    grid-area: header;
+  }
+  ```
+
+- 이렇게 하면 width를 이 템플릿이 꽉 채울 수 있게 된다
+
   
+
