@@ -32,6 +32,7 @@
 - [2.3 Grid Template Areas](#23-Grid-Template-Areas)
 - [2.4 Rows and Columns](24-Rows-and-Columns)
 - [2.5 Shortcuts](#25-Shortcuts)
+- [2.6 Line Naming](26-Line-Naming)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -243,3 +244,23 @@
 - grid-column:1/4; 3칸
 - grid-column:span 4; 4칸
 -  grid-column: 2/span 2; 2번째부터 2칸
+
+<br/><br/><br/><br/><br/>
+
+## 2.6 Line Naming
+
+- 이름을 붙여 사용하는 방법
+
+  ```css
+  grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line] 100px ;
+  
+  grid-template-rows: repeat(4, [row-line] 100px);
+  
+  .content{
+    background-color: #3498db;
+    grid-column:first-line/fourth-line;
+    grid-row:row-line 2/row-line 4;
+  }
+  ```
+
+  
