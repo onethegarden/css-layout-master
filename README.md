@@ -32,8 +32,9 @@
 - [2.3 Grid Template Areas](#23-Grid-Template-Areas)
 - [2.4 Rows and Columns](24-Rows-and-Columns)
 - [2.5 Shortcuts](#25-Shortcuts)
-- [2.6 Line Naming](26-Line-Naming)
-- [2.7 Grid Template](27-Grid-Template)
+- [2.6 Line Naming](#26-Line-Naming)
+- [2.7 Grid Template](#27-grid-template)
+- [2.8 Place Items](#28-Place-Items)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -289,5 +290,14 @@
 
 - 이렇게 하면 width를 이 템플릿이 꽉 채울 수 있게 된다
 
-  
+
+<br/><br/><br/><br/><br/>
+
+## 2.8 Place Items
+
+- ```justify-items``` , ```align-items```로 그리드 채우는 것 설정 , default : stretch
+
+- ```place-items: y x```는 위 두 값 통합
+
+  ex) ``` place-items: stretch center;```
 
