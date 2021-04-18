@@ -36,6 +36,7 @@
 - [2.7 Grid Template](#27-grid-template)
 - [2.8 Place Items](#28-Place-Items)
 - [2.9 Place Content](#29-Place-Content)
+- [2.10 Auto Columns and Rows](210-Auto-Columns-and-Rows)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -312,3 +313,20 @@
   둘 다 start, end, space-evenly, space-around, space-between사용
 
 - place-content: 수직,수평 
+
+<br/><br/><br/><br/><br/>
+
+## 2.10 Auto Columns and Rows
+
+- justify-self: 자식요소에서의 가로정렬
+- align-self: 자식요소에서의 세로정렬
+- place-self: 가로,세로 정렬
+
+---
+
+#### 중요
+
+- grid-auto-flow: row|column|row dense| column dense
+  - 자동으로 row|column을 채움, dense : 작은 크기의 아이템이 나타나면 걔를 먼저 채움(접근성 떨어짐)
+-  grid-auto-columns | grid-auto-rows : 자동으로 생성된 그리드 트랙의 크기를 지정한다
+
