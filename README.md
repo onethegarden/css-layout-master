@@ -35,6 +35,7 @@
 - [2.6 Line Naming](#26-Line-Naming)
 - [2.7 Grid Template](#27-grid-template)
 - [2.8 Place Items](#28-Place-Items)
+- [2.9 Place Content](#29-Place-Content)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -290,7 +291,6 @@
 
 - 이렇게 하면 width를 이 템플릿이 꽉 채울 수 있게 된다
 
-
 <br/><br/><br/><br/><br/>
 
 ## 2.8 Place Items
@@ -301,3 +301,14 @@
 
   ex) ``` place-items: stretch center;```
 
+<br/><br/><br/><br/><br/>
+
+## 2.9 Place Content
+
+- justify-content : 그리드의 가로 정렬, default 는 start
+
+- align-content : 그리드의 세로정렬
+
+  둘 다 start, end, space-evenly, space-around, space-between사용
+
+- place-content: 수직,수평 
