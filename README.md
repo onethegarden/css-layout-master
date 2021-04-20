@@ -37,6 +37,8 @@
 - [2.8 Place Items](#28-Place-Items)
 - [2.9 Place Content](#29-Place-Content)
 - [2.10 Auto Columns and Rows](210-Auto-Columns-and-Rows)
+- [2.11 minmax](#211-minmax)
+- [2.12 auto-fit auto-fill](212-auto-fit-auto-fill)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -330,3 +332,35 @@
   - 자동으로 row|column을 채움, dense : 작은 크기의 아이템이 나타나면 걔를 먼저 채움(접근성 떨어짐)
 -  grid-auto-columns | grid-auto-rows : 자동으로 생성된 그리드 트랙의 크기를 지정한다
 
+<br/><br/><br/><br/><br/>
+
+## 2.11 minmax
+
+> 최소, 최대값을 정할 수 있음
+
+```css
+grid-template-columns: repeat(4, minmax(100px, 150px));
+```
+
+- minmax(min값, max값)
+
+<br/><br/><br/><br/><br/>
+
+## 2.12 auto-fit auto-fill
+
+![image](https://user-images.githubusercontent.com/51187540/115475777-5b37e900-a27b-11eb-81a7-5a81616e929e.png)
+
+- 위에가 autofill, 아래가 autofit
+
+```css
+.grid:first-child {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.grid:last-child {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+```
+
+- autofill 자동으로 다른 요소들이 들어올 공간을 만듦
+- autofit 개수에 맞게 채움
