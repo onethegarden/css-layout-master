@@ -35,6 +35,7 @@
 - [3.1 Variables and Nesting](#31-Variables-and-Nesting)
 - [3.2 Mixins](#32-Mixins)
 - [3.3 Extends](#33-Extends)
+- [3.4 Awesome Mixins and Conclusions](#34-Awesome-Mixins-and-Conclusions)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -343,7 +344,7 @@ grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
 
 - gulpfile.bable.js 의 scss 컴파일 방법 **(gulpfile.babel.js)**
 
-- src에 있는 scss파일을 읽어서 dest로 지정한 경로에 css파일로 컴파일 해
+- src에 있는 scss파일을 읽어서 dest로 지정한 경로에 css파일로 컴파일 해준다.
 
   ```javascript
   const routes = {
@@ -554,6 +555,61 @@ grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
   a {
     @extend %button;
     text-decoration: none;
+  }
+  ```
+
+<br/><br/><br/><br/><br/>
+
+## 3.4 Awesome Mixins and Conclusions
+
+-    mixin에    @content 를 사용하면 해당 요소를 그대로 mixin에서 사용할 수 있음
+
+- _mixins.scss - 미디어쿼리로 반응형 웹 적용 (화면 사이즈는 그냥 예시임)
+
+  ```scss
+  $minIphone: 500px;
+  $maxIphone: 690px;
+  $minTablet: $minIphone + 1;
+  $maxTablet: 1120px;
+  
+  @mixin responsive($device) {
+    @if $device == "iphone" {
+      @media screen and (min-width: $minIphone) and (max-width: $maxIphone) {
+        @content;
+      }
+    } @else if $device == "tablet" {
+      @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+        @content;
+      }
+    } @else if $device == "iphone-l" {
+      @media screen and (max-width: $minIphone) and (max-width: $maxIphone) and (orientation: landscape) {
+        @content;
+      }
+    } @else if $device == "ipad-l" {
+      @media screen and (min-width: $minTablet) and (max-width: $maxTablet) and (orientation: landscape) {
+        @content;
+      }
+    }
+  }
+  
+  ```
+
+- style.scss
+
+  ```scss
+  @import "_mixins";
+  
+  a {
+    color: red;
+    @include responsive("iphone") {
+      color: yellow;
+    }
+    @include responsive("iphone-l") {
+      color: blue;
+    }
+    @include responsive("tablet") {
+      color: green;
+    }
   }
   ```
 
