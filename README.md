@@ -34,6 +34,7 @@
 
 - [3.1 Variables and Nesting](#31-Variables-and-Nesting)
 - [3.2 Mixins](#32-Mixins)
+- [3.3 Extends](#33-Extends)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -519,6 +520,40 @@ grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
     &:nth-child(even) {
       @include link("even");
     }
+  }
+  ```
+
+<br/><br/><br/><br/><br/>
+
+## 3.3 Extends
+
+- 특정 속성을 상속받아 사용할 수 있음
+
+  - %를 앞에 붙임
+  - @extend %이름 으로 사용
+
+- _buttons.scss
+
+  ```scss
+  %button {
+    border-radius: 7px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background-color: peru;
+    color: white;
+    font-weight: 500;
+  }
+  ```
+
+- styles.scss
+
+  ```scss
+  @import "_buttons";
+  
+  a {
+    @extend %button;
+    text-decoration: none;
   }
   ```
 
