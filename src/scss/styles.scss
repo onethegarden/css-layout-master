@@ -1,0 +1,19 @@
+@import "_variables";
+
+body {
+  background: $bg;
+}
+
+h1 {
+  color: white;
+  font-size: $title;
+}
+.box {
+  margin-top: 20px;
+  h2 {
+    color: blue;
+  }
+  button {
+    color: red;
+  }
+}
