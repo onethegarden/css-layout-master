@@ -33,6 +33,7 @@
 - [3.0 CSS Preprocessors and Set Up](#30-CSS-Preprocessors-and-Set-Up)
 
 - [3.1 Variables and Nesting](#31-Variables-and-Nesting)
+- [3.2 Mixins](#32-Mixins)
 
 <br/><br/><br/>
 <br/><br/><br/>
@@ -481,5 +482,44 @@ grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
   }
   ```
 
-  
+<br/><br/><br/><br/><br/>
 
+## 3.2 Mixins
+
+- css를 함수처럼 사용
+
+  - @mixin으로 정의
+  - 파라미터를 받아 변수처럼 사용 가능
+  - if/else 문 사용 가능
+
+- _mixins.scss 파일
+
+  ```scss
+  @mixin link($word) {
+    text-decoration: none;
+    display: block;
+    @if $word == "odd" {
+      color: blue;
+    } @else {
+      color: red;
+    }
+  }
+  ```
+
+- style.scss
+
+  ```scss
+  @import "_mixins";
+  
+  a {
+    margin-bottom: 10px;
+    &:nth-child(odd) {
+      @include link("odd");
+    }
+    &:nth-child(even) {
+      @include link("even");
+    }
+  }
+  ```
+
+  
