@@ -1,14 +1,58 @@
-@import "_mixins";
-
-a {
-  color: red;
-  @include responsive("iphone") {
-    color: yellow;
+@import "reset";
+@import "_variables";
+body {
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+header {
+  background-color: $white;
+  width: 33%;
+  height: 100%;
+  padding: 190px;
+  padding: 10vh 0 72px 72px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $red;
+  h1 {
+    font-size: 75px;
+    width: 50%;
   }
-  @include responsive("iphone-l") {
-    color: blue;
+  h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
-  @include responsive("tablet") {
-    color: green;
+  h3,
+  p {
+    width: 80%;
+    text-align: justify;
+  }
+  p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  nav {
+    width: 90%;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      flex-wrap: wrap;
+      li {
+        margin-right: 10px;
+        font-size: 20px;
+        color: black;
+        opacity: 0.5;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
